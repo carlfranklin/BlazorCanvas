@@ -1,4 +1,3 @@
-global using AvnCanvasHelper;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
