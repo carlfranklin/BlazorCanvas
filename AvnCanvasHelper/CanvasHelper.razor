@@ -1,0 +1,19 @@
+﻿@*
+    Adapted from Scott Harden's EXCELLENT blog post, 
+    "Draw Animated Graphics in the Browser with Blazor WebAssembly"
+    https://swharden.com/blog/2021-01-07-blazor-canvas-animated-graphics/
+*@ 
+
+<div id="canvasHolder" style="position: fixed; width: 100%; height: 100%">
+    @ChildContent
+</div>
+
+@code {
+
+    /// <summary>
+    /// In a Blazor App, you would wrap a BECanvas element
+    /// in the CanvasHelper
+    /// </summary>
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}
