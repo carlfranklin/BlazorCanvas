@@ -44,6 +44,25 @@ namespace AvnCanvasHelper
         public EventCallback<double> RenderFrame { get; set; }
 
         /// <summary>
+        /// Event called on mouse down
+        /// </summary>
+        [Parameter]
+        public EventCallback<CanvasMouseArgs> MouseDown { get; set; }
+
+        /// <summary>
+        /// Event called on mouse up
+        /// </summary>
+        [Parameter]
+        public EventCallback<CanvasMouseArgs> MouseUp { get; set; }
+
+        /// <summary>
+        /// Event called on mouse move
+        /// </summary>
+        [Parameter]
+        public EventCallback<CanvasMouseArgs> MouseMove { get; set; }
+
+
+        /// <summary>
         /// Call this in your Blazor app's OnAfterRenderAsync method when firstRender is true
         /// </summary>
         /// <returns></returns>
@@ -92,6 +111,39 @@ namespace AvnCanvasHelper
 
             // raise the RenderFrame event to the blazor app
             await RenderFrame.InvokeAsync(fps);
+        }
+
+        /// <summary>
+        /// Handle the JavaScript window.mousedown event
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
+        [JSInvokable]
+        public async Task OnMouseDown(CanvasMouseArgs args)
+        {
+            await MouseDown.InvokeAsync(args);
+        }
+
+        /// <summary>
+        /// Handle the JavaScript window.mouseup event
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
+        [JSInvokable]
+        public async Task OnMouseUp(CanvasMouseArgs args)
+        {
+            await MouseUp.InvokeAsync(args);
+        }
+
+        /// <summary>
+        /// Handle the JavaScript window.mousemove event
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
+        [JSInvokable]
+        public async Task OnMouseMove(CanvasMouseArgs args)
+        {
+            await MouseMove.InvokeAsync(args);
         }
 
         /// <summary>

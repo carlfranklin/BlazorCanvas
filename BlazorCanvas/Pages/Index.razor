@@ -1,22 +1,27 @@
 ﻿@page "/"
 
 <PageTitle>Index</PageTitle>
-@*
-<div>
-    <span>Size: @Size.Width by @Size.Height FPS: @FPS</span>
-</div>
-*@
-<CanvasHelper CanvasResized="CanvasResized" RenderFrame="RenderFrame" @ref="CanvasHelper">
-    <BECanvas Width="600" Height="400" @ref="CanvasReference"></BECanvas>
+
+<CanvasHelper 
+    @ref="CanvasHelper"
+    CanvasResized="CanvasResized" 
+    RenderFrame="RenderFrame"
+    MouseDown="MouseDown"
+    MouseUp="MouseUp"
+    MouseMove="MouseMove">
+
+        <BECanvas Width="600" Height="400" @ref="CanvasReference"></BECanvas>
+
 </CanvasHelper>
 
 @code {
+
     private Size Size = new Size();
     private double FPS;
-    private Field BallField = new Field();
     private Canvas2DContext Ctx;
     private BECanvasComponent CanvasReference;
     private CanvasHelper CanvasHelper;
+    private Field BallField = new Field();
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -82,5 +87,23 @@
     {
         Size = size;
         BallField.Resize(size.Width, size.Height);
+    }
+    
+    // Handle mouse down events
+    void MouseDown(CanvasMouseArgs args)
+    {
+        
+    }
+
+    // Handle mouse up events
+    void MouseUp(CanvasMouseArgs args)
+    {
+        
+    }
+
+    // Handle mouse move events
+    void MouseMove(CanvasMouseArgs args)
+    {
+        
     }
 }
