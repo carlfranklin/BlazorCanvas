@@ -1,6 +1,6 @@
 # Blazor Canvas
 
-The Canvas is built in to all modern browsers that support HTML5 or higher. It's for drawing graphics and doing graphical animations. If you're new to the Canvas, check out the [W3Schools Canvas Tutorial](https://www.w3schools.com/graphics/canvas_intro.asp), and for fun check out [25 Ridiculously Impressive Canvas Experiments](https://code.tutsplus.com/articles/21-ridiculously-impressive-html5-canvas-experiments--net-14210), a collection of Canvas demos done in JavaScript.
+The Canvas is built in to all modern browsers that support HTML5 or higher. It's for drawing graphics and doing graphical animations. If you're new to the Canvas, check out the [W3Schools Canvas Tutorial](https://www.w3schools.com/graphics/canvas_intro.asp), and for fun check out [25 Ridiculously Impressive HTML5 Canvas Experiments](https://code.tutsplus.com/articles/21-ridiculously-impressive-html5-canvas-experiments--net-14210), a collection of Canvas demos done in JavaScript.
 
 This demo builds on from Scott Harden's EXCELLENT blog post, [Draw Animated Graphics in the Browser with Blazor WebAssembly](https://swharden.com/blog/2021-01-07-blazor-canvas-animated-graphics/), which uses the OSS [Blazor.Extensions.Canvas](https://github.com/BlazorExtensions/Canvas) component to draw on the canvas, but also includes JavaScript to help with animations, illustrating the real power of the HTML Canvas element. [Click here for a tutorial on the HTML Canvas element](https://www.w3schools.com/graphics/canvas_intro.asp).
 
