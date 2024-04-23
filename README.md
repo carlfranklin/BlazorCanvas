@@ -140,11 +140,9 @@ The demo is a Blazor Server application that replicates the code Scott Harden's 
 
 Here are the steps to reproduce the demo:
 
-**Download or clone this repo**
-
 **Create a Global WebAssembly Blazor Web App in Visual Studio called BlazorCanvas**
 
-**Add the AvnCanvasHelper project to the solution, or add the AvnCanvasHelper NuGet package to both projects.**
+**Add the AvnCanvasHelper project from this repo to the solution, or add the AvnCanvasHelper NuGet package to both projects.**
 
 The rest of the steps are all in the `BlazorCanvas` project.
 
