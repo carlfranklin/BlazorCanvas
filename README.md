@@ -140,15 +140,11 @@ The demo is a Blazor Server application that replicates the code Scott Harden's 
 
 Here are the steps to reproduce the demo:
 
-**Download or clone this repo.**
+**Download or clone this repo**
 
-**Create a Blazor Server App in Visual Studio called BlazorCanvas**
+**Create a Global WebAssembly Blazor Web App in Visual Studio called BlazorCanvas**
 
-**Add the AvnCanvasHelper project to the solution.**
-
-It would be helpful to first copy the `AvnCanvasHelper` folder into the solution folder before adding it.
-
-**Add a project reference from BlazorCanvas to AvnCanvasHelper** 
+**Add the AvnCanvasHelper project to the solution, or add the AvnCanvasHelper NuGet package to both projects.**
 
 The rest of the steps are all in the `BlazorCanvas` project.
 
@@ -160,7 +156,7 @@ Add the following to the .csproj file:
 </ItemGroup>
 ```
 
-**Add the following to *Pages/_Layout.cshtml*** below the line `<script src="_framework/blazor.server.js"></script>`
+**Add the following to *App.Razor*** below the existing `<script>` tag:
 
 ```html
 <script src="_content/Blazor.Extensions.Canvas/blazor.extensions.canvas.js"></script>
@@ -184,7 +180,7 @@ Add the following to the .csproj file:
 @Body
 ```
 
-**Add a *Models* folder and add these two classes:**
+**Add a *Models* folder to the client project, and add these two classes:**
 
 *Ball.cs*:
 
@@ -286,7 +282,7 @@ public class Field
 }
 ```
 
-**Replace *Pages/Index.razor* with the following**:
+**Replace *Home.razor* with the following**:
 
 ```c#
 @page "/"
