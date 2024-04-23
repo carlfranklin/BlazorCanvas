@@ -142,7 +142,7 @@ Here are the steps to reproduce the demo:
 
 **Create a Global WebAssembly Blazor Web App in Visual Studio called BlazorCanvas**
 
-**Add the AvnCanvasHelper project from this repo to the solution, or add the AvnCanvasHelper NuGet package to both projects.**
+**Add the AvnCanvasHelper project from this repo to the solution (and a project reference from both projects), or add the AvnCanvasHelper NuGet package to both projects.**
 
 The rest of the steps are all in the `BlazorCanvas` project.
 
@@ -160,7 +160,7 @@ Add the following to the .csproj file:
 <script src="_content/Blazor.Extensions.Canvas/blazor.extensions.canvas.js"></script>
 ```
 
-**Add the following to *_Imports.razor*** :
+**Add the following to *_Imports.razor* in both projects** :
 
 ```c#
 @using Blazor.Extensions
