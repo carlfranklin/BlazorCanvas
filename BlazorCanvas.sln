@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCanvas", "BlazorCanvas\BlazorCanvas.csproj", "{2D30EB6A-264B-4A2B-8B2B-C35F50EC0A99}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvnCanvasHelper", "AvnCanvasHelper\AvnCanvasHelper.csproj", "{7BA325F5-2A40-41E7-A4A6-DF9B6575EACD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCanvas", "BlazorCanvas\BlazorCanvas.csproj", "{6057FBAE-2A65-4F26-88D9-401A13E93EC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2D30EB6A-264B-4A2B-8B2B-C35F50EC0A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D30EB6A-264B-4A2B-8B2B-C35F50EC0A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D30EB6A-264B-4A2B-8B2B-C35F50EC0A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D30EB6A-264B-4A2B-8B2B-C35F50EC0A99}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7BA325F5-2A40-41E7-A4A6-DF9B6575EACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7BA325F5-2A40-41E7-A4A6-DF9B6575EACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BA325F5-2A40-41E7-A4A6-DF9B6575EACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BA325F5-2A40-41E7-A4A6-DF9B6575EACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6057FBAE-2A65-4F26-88D9-401A13E93EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6057FBAE-2A65-4F26-88D9-401A13E93EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6057FBAE-2A65-4F26-88D9-401A13E93EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6057FBAE-2A65-4F26-88D9-401A13E93EC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
