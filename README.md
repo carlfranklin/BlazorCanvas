@@ -140,9 +140,9 @@ The demo is a Blazor Server application that replicates the code Scott Harden's 
 
 Here are the steps to reproduce the demo:
 
-**Create a Global WebAssembly Blazor Web App in Visual Studio called BlazorCanvas**
+**Create a Blazor Web App in Visual Studio called BlazorCanvas (choose Global Server interactivity)**
 
-**Add the AvnCanvasHelper project from this repo to the solution (and a project reference from both projects), or add the AvnCanvasHelper NuGet package to both projects.**
+**Add the AvnCanvasHelper project from this repo to the solution (and a project reference from the BlazorCanvas project), or add the AvnCanvasHelper NuGet package to the BlazorCanvas project.**
 
 The rest of the steps are all in the `BlazorCanvas` project.
 
@@ -160,7 +160,7 @@ Add the following to the .csproj file:
 <script src="_content/Blazor.Extensions.Canvas/blazor.extensions.canvas.js"></script>
 ```
 
-**Add the following to *_Imports.razor* in both projects** :
+**Add the following to *_Imports.razor* :**
 
 ```c#
 @using Blazor.Extensions
@@ -171,14 +171,14 @@ Add the following to the .csproj file:
 @using System.Drawing
 ```
 
-**Replace Shared/MainLayout.razor with the following:**
+**Replace *Components/Layout/MainLayout.razor* with the following:**
 
 ```
 @inherits LayoutComponentBase
 @Body
 ```
 
-**Add a *Models* folder to the client project, and add these two classes:**
+**Add a *Models* folder to the BlazorCanvas project, and add these two classes:**
 
 *Ball.cs*:
 
@@ -280,7 +280,7 @@ public class Field
 }
 ```
 
-**Replace *Home.razor* with the following**:
+**Replace *Components/Pages/Home.razor* with the following**:
 
 ```c#
 @page "/"
